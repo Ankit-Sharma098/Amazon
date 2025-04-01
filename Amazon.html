@@ -1,15 +1,68 @@
 <!Doctype html>
 <html lang="eng">
-    <head>
-      <title>Amazon Project</title>
-      <link rel="icon" href="Images/amazon-logo.jpg">
-    </head>
-    <title>
-        <div>
-            <div>
-                <img src="Images/women-chiffon-beachwear-coverup-black.jpg">
-                
+
+<head>
+    <title>Amazon Project</title>
+    <link rel="icon" href="Images/amazon-logo.jpg">
+    <link rel="stylesheet" href="Amazon-product.css">
+    <link rel="stylesheet" href="amazon-content-body.css">
+    <link rel="stylesheet" href="header-Amazon.css">
+</head>
+
+<body>
+    <!--header part-->
+    <div class="header-part-div">
+        <!--amazon logo description-->
+        <a href="Amazon.html">
+            <div class="amazon-logo-div">
+
+                <img class="amazon-logo-white" src="logo/amazon-logo-white.png" alt="">
+            </div>
+        </a>
+
+        <!--Delivering to address and its to location-->
+        <div class="details-div">
+            <span>Delivering to Patna 800024</span>
+            <span class="orders-para"><img style="width: 15px;" src="logo/location-icon.jpg" alt="">
+                update location</span>
+        </div>
+        <!--search box description-->
+        <div class="middle-part-of-header">
+            <input class="Search-box" type="text" placeholder="Search">
+            <div class="search-image-div">
+                <img class="search-icon" src="logo/search-icon.png" alt="search-icon">
             </div>
         </div>
-    </title>
+        <!--Country and language-->
+        <div class="country-icon-div">
+            <img style="width: 27px;" src="logo/tiranga.png" alt="national flag">
+            <span style="color: white;">EN &#x2913;</span>
+        </div>
+        <!--sign in Account list-->
+        <div class="details-div">
+            <span>Hello,sign in</span>
+            <span class="orders-para">Account & Lists &#x2913;</span>
+        </div>
+        <!--returns and orders section-->
+        <a href="orders.html"><div class="details-div">
+            <span>Returns</span>
+            <span class="orders-para">& Orders</span>
+        </div></a>
+        
+        <!--add to cart section-->
+        <div class="cart-icon-div">
+            <div class="count-add-to-cart js-count-cart">0</div>
+            <a href="CART.html"><img class="cart-icon" src="logo/cart-icon.png" alt="cart-icon"></a>
+            <span>Cart</span>
+        </div>
+
+    </div>
+    <!--body content-->
+    <div class="body-content-of-product js-content-body">
+    </div>
+
+    <script type="module" src="product.js"></script>
+
+</body>
+
 </html>

@@ -1,0 +1,129 @@
+.header-part-div {
+    height: 70px;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    bottom:120px;
+    right:0px;
+    z-index: 100;
+}
+.amazon-logo-div{
+    margin-left: 20px;
+    padding: 6px;
+    border: 2px solid transparent;
+    transition: border-color 0.2s;
+    cursor: pointer;
+}
+.amazon-logo-div:hover {
+    border-color: rgb(241, 236, 236);
+}
+.amazon-logo-white {
+    width: 120px;
+}
+@media (max-width: 800px) {
+    .amazon-logo-div {
+      width: unset;
+    }
+  }
+.Search-box {
+    width: 300px;
+    height: 35px;
+    border: 2px solid transparent;
+    /* Initially transparent border */
+    border-radius: 7px;
+    padding-left: 20px;
+    font-size: 16px;
+    transition: border-color 0.1s;
+    /* Smooth transition */
+}
+
+.Search-box::placeholder {
+    color: rgb(78, 76, 76);
+    /* Default placeholder color */
+    opacity: 1;
+    /* Ensure it's fully visible */
+}
+
+.Search-box:focus {
+    border-color: rgb(236, 133, 50);
+    /* Border changes to yellow when focused */
+    outline: none;
+    /* Removes default outline */
+}
+
+.middle-part-of-header {
+    display: flex;
+    align-items: center;
+    /* Align items vertically */
+}
+
+.search-image-div {
+    background-color: rgb(236, 157, 94);
+    width: 40px;
+    /* Adjust width for better appearance */
+    height: 35px;
+    /* Match input height */
+    display: flex;
+    align-items: center;
+    /* Center icon vertically */
+    justify-content: center;
+    /* Center icon horizontally */
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    cursor: pointer;
+    /* Make it clickable */
+}
+.search-icon {
+    width: 20px;
+    height: 20px;
+}
+.details-div{
+    padding: 7px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    border:2px solid transparent;
+    transition: border-color 0.1s;
+    cursor: pointer;
+}
+.details-div:hover{
+    border-color: white;
+}
+.orders-para{
+    font-weight: bold;
+}
+.cart-icon-div{
+    position: relative;
+    margin-right: 5px;
+    padding: 9px;
+    color:white;
+    border: 2px solid transparent;
+    transition: border-color 0.1s;
+    cursor: pointer;
+}
+.cart-icon-div:hover{
+   border-color: white;
+}
+.cart-icon{
+    width: 40px;
+}
+.country-icon-div{
+    display: flex;
+    gap: 3px;
+    padding: 7px;
+    border: 2px solid transparent;
+    transition: border-color 0.1s;
+}
+.country-icon-div:hover{
+    border-color: white;
+}
+.count-add-to-cart{
+    position: absolute;
+    padding-left:16px;
+    color:#ff8400;
+}
